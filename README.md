@@ -1,7 +1,7 @@
 # Cybersecurity Risk Management
 
-### On a daily basis, many security officers will use STIG Viewer 3 (SV3) to test hardware, software, and networking components. 
- The input for SV3 is STIG (Security Technical Implementation Guides) checklists, which are published by US DoD and other organizations.  The output of the test is a json file.  Below is a data model to capture the results from the json objects into a first normal form (1NF) relational model.  
+### On a daily basis, many security officers will use SCC (Security Content Automation Protocol Compliance Checker) to test hardware, software, and networking components (https://www.niwcatlantic.navy.mil/Technology/SCAP/).   
+ The input for SCC is STIG (Security Technical Implementation Guides) checklists, which are published by US DoD and other organizations.  The output of the test is a csv, xml, or json file.  Below is a data model to capture the results from either the csv, xml, or json objects into a first normal form (1NF) relational model.  
 
 - CHECKLISTS is the core table holding basic checklist metadata.
 - CHECKLIST_RESULTS table to store results of each checklist.  CHECKLIST_RESULTS table is associated with both CHECKLISTS and STIG_VIEWER_RUNS to link results to their specific checklists and runs.
