@@ -1,12 +1,9 @@
 # Cybersecurity Risk Management
 
-### On a daily basis, many security officers will use SCC (Security Content Automation Protocol Compliance Checker) to test hardware, software, and networking components (https://www.niwcatlantic.navy.mil/Technology/SCAP/).   
+## Introduction
+On a daily basis, many security officers will use SCC (Security Content Automation Protocol Compliance Checker) to test hardware, software, and networking components (https://www.niwcatlantic.navy.mil/Technology/SCAP/).   The input for SCC is STIG (Security Technical Implementation Guides) checklists (https://www.stigviewer.com/stigs), which are published by US DoD and other organizations.  The results of the test are in a csv, xml, or json file.  Applications like Stig Viewer 3 (https://public.cyber.mil/stigs/downloads/?_dl_facet_stigs=stig-viewer-3x) can be used to view the results.  
 
-#### The input for SCC is STIG (Security Technical Implementation Guides) checklists (https://www.stigviewer.com/stigs), which are published by US DoD and other organizations.  The results of the test are in a csv, xml, or json file.  
-
-#### Applications like Stig Viewer 3 (https://public.cyber.mil/stigs/downloads/?_dl_facet_stigs=stig-viewer-3x) can be used to view the results.  
-
-#### However, storing the results into a relational model enables for persisting the test results, and providing stakeholders an opportunity to explore deeper into the issues at hand.  Below is a data model with an ER diagram to capture the results from either csv, xml, or json objects into a third normal form (3NF) relational model.  
+However, storing the results into a relational model enables for persisting the test results, and providing stakeholders an opportunity to explore deeper into the issues at hand.  Below is a data model with an ER diagram to capture the results from either csv, xml, or json objects into a third normal form (3NF) relational model.  
 
  
 ![multiple runs](https://github.com/user-attachments/assets/b9e00122-aa60-4b1e-bb09-9522a691e5ee)
